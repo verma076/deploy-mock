@@ -17,7 +17,7 @@ app.use('/api/appointments', appointmentRoutes);
 
 
 app.get("/",(req,res)=>{
-    res.status(200).send({"msg":"This is a Home page"})
+    res.status(200).send({"msg":"Welcoe to the Home page"})
 })
 
 
@@ -32,7 +32,7 @@ app.listen(PORT,async()=>{
          console.log(`Server is running at ${PORT}`)
 
     }catch(err){
-        
+
         console.log(err)
 }
 })
