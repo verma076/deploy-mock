@@ -12,13 +12,13 @@ app.use(cors())
 
 
 app.use('/api/users', userRoutes);
+
 app.use('/api/appointments', appointmentRoutes);
+
 
 app.get("/",(req,res)=>{
     res.status(200).send({"msg":"This is a Home page"})
 })
-
-
 
 
 const PORT=process.env.Port
@@ -26,9 +26,13 @@ const PORT=process.env.Port
 app.listen(PORT,async()=>{
     try{
          await connection
-         console.log("Server is connected to Db")
+
+         console.log("Server is connected to Dtabase")
+
          console.log(`Server is running at ${PORT}`)
+
     }catch(err){
+        
         console.log(err)
 }
 })

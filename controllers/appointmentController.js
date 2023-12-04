@@ -1,5 +1,3 @@
-
-
 const Appointment = require('../model/Appointment.model');
 
 const getAppointments = async (req, res) => {

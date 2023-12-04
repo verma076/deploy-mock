@@ -1,6 +1,7 @@
-
 const express = require('express');
+
 const router = express.Router();
+
 const {
   getAppointments,
   createAppointment,
@@ -10,6 +11,7 @@ const {
 
 
 router.get('/', getAppointments);
+
 
 router.post('/', createAppointment);
 
